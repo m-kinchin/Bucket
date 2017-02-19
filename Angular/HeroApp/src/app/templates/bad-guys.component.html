@@ -1,0 +1,11 @@
+<h2>My Bad Guys</h2>
+<ul class="heroes">
+  <li
+    (click)="onSelect(badGuy)"
+    [class.selected-odd]="badGuy === selectedBadGuy && badGuy.id % 2 != 0"
+    [class.selected-even]="badGuy === selectedBadGuy && badGuy.id % 2 == 0"
+    *ngFor="let badGuy of badGuys">
+    <span class="badge">{{badGuy.id}}</span> {{badGuy.name}}
+  </li>
+</ul>
+<person-details [hero]="selectedBadGuy"></person-details>

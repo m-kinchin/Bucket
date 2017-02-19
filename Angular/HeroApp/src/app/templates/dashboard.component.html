@@ -1,0 +1,16 @@
+<h2>Top Heroes</h2>
+<div class="grid grid-pad">
+  <div *ngFor="let hero of heroes" class="col-1-4">
+    <div class="module hero">
+      <h4>{{hero.name}}</h4>
+    </div>
+  </div>
+</div>
+<h2>Top Bad Guys</h2>
+<div class="grid grid-pad">
+  <div *ngFor="let badGuy of badGuys" class="col-1-4">
+    <div class="module hero">
+      <h4>{{badGuy.name}}</h4>
+    </div>
+  </div>
+</div>

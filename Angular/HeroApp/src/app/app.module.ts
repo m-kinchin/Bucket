@@ -1,21 +1,59 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
+import {NgModule}      from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule}   from '@angular/forms';
+import { RouterModule }   from '@angular/router';
 
-import { AppComponent }  from './components/app.component';
-import { HeroDetailsComponent }  from './components/hero-details.component';
+import {StartupComponent}  from './components/startup.component';
+import {PersonDetailsComponent}  from './components/person-details.component';
+import {HeroesComponent} from "./components/heroes.component";
+import {BadGuysComponent} from "./components/bad-guys.component";
+import {DashboardComponent} from "./components/dashboard.component";
+import {HeroService} from "./services/hero.service";
+import {BadGuyService} from "./services/bad-guy.service";
 
 @NgModule({
-  imports:      [
+  imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      {
+        path: 'heroes',
+        component: HeroesComponent
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent
+      },
+      {
+        path: '',
+        redirectTo: '/dashboard',
+        pathMatch: 'full'
+      },
+      {
+        path: 'bad_guys',
+        component: BadGuysComponent
+      },
+      {
+        path: 'detail/:id',
+        component: PersonDetailsComponent
+      }
+    ])
   ],
   declarations: [
-    AppComponent,
-    HeroDetailsComponent
+    StartupComponent,
+    PersonDetailsComponent,
+    HeroesComponent,
+    DashboardComponent,
+    BadGuysComponent
   ],
-  bootstrap:    [
-    AppComponent
-  ]
+  bootstrap: [
+    StartupComponent
+  ],
+  providers: [
+    HeroService,
+    BadGuyService
+  ],
 })
-export class AppModule { }
+
+export class AppModule {
+}

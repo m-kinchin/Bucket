@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Hero } from '../models/hero';
+import { Person } from '../models/person';
 import { HEROES } from '../mocks/heroes-mock';
 
 @Injectable()
 export class HeroService {
-  getHeroes(): Promise<Hero[]> {
+  getHeroes(): Promise<Person[]> {
     return Promise.resolve(HEROES);
   };
-  getHeroesSlowly(): Promise<Hero[]> {
+  getHeroesSlowly(): Promise<Person[]> {
     return new Promise(resolve => {
       // Simulate server latency with 2 second delay
       setTimeout(() => resolve(this.getHeroes()), 2000);

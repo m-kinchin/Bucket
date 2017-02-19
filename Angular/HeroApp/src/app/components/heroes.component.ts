@@ -1,26 +1,13 @@
-import { Component } from '@angular/core';
-import { OnInit } from '@angular/core';
-import { Hero } from '../models/hero';
-import { HeroDetailsComponent } from './hero-details.component';
-import { HeroService } from '../services/hero.service';
+import {Component, Input} from '@angular/core';
+import {OnInit} from '@angular/core';
+import {Person} from '../models/person';
+import {PersonDetailsComponent} from './person-details.component';
+import {HeroService} from '../services/hero.service';
 
 @Component({
-  selector: 'my-app',
-  providers: [HeroService],
-  template: `
-  <h1>{{title}}</h1>
-  <h2>My Heroes</h2>
-  <ul class="heroes">
-    <li 
-      (click)="onSelect(hero)" 
-      [class.selected-odd]="hero === selectedHero && hero.id % 2 != 0"
-      [class.selected-even]="hero === selectedHero && hero.id % 2 == 0"
-      *ngFor="let hero of heroes">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </li>
-  </ul>
-  <hero-details [hero]="selectedHero"></hero-details>
-`,
+  moduleId: module.id,
+  selector: 'heroes',
+  templateUrl: '../templates/heroes.component.html',
   styles: [`
   .selected-odd {
     background-color: #CFD8DC !important;
@@ -77,18 +64,23 @@ import { HeroService } from '../services/hero.service';
 
 })
 
-export class AppComponent  implements OnInit {
+export class HeroesComponent implements OnInit {
   ngOnInit(): void {
     this.getHeroes();
   }
-  title = 'Tour of Heroes';
-  heroes : Hero[];
-  selectedHero: Hero;
-  constructor(private heroService: HeroService) { }
-  onSelect(hero: Hero): void {
+
+  heroes: Person[];
+  selectedHero: Person;
+
+  constructor(
+    private heroService: HeroService) {
+  }
+
+  onSelect(hero: Person): void {
     this.selectedHero = hero;
   };
+
   getHeroes(): void {
-    this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
+      this.heroService.getHeroes().then(heroes => this.heroes = heroes);
   }
- }
+}
