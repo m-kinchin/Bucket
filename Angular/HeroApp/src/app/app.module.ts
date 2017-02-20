@@ -1,15 +1,14 @@
 import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule}   from '@angular/forms';
-import { RouterModule }   from '@angular/router';
+import {RouterModule}   from '@angular/router';
 
 import {StartupComponent}  from './components/startup.component';
 import {PersonDetailsComponent}  from './components/person-details.component';
 import {HeroesComponent} from "./components/heroes.component";
 import {BadGuysComponent} from "./components/bad-guys.component";
 import {DashboardComponent} from "./components/dashboard.component";
-import {HeroService} from "./services/hero.service";
-import {BadGuyService} from "./services/bad-guy.service";
+import {PersonService} from "./services/person.service";
 
 @NgModule({
   imports: [
@@ -50,8 +49,7 @@ import {BadGuyService} from "./services/bad-guy.service";
     StartupComponent
   ],
   providers: [
-    HeroService,
-    BadGuyService
+    PersonService
   ],
 })
 

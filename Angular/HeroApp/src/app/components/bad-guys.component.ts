@@ -2,7 +2,7 @@ import {Component, Input} from '@angular/core';
 import {OnInit} from '@angular/core';
 import {Person} from '../models/person';
 import {PersonDetailsComponent} from './person-details.component';
-import {BadGuyService} from '../services/bad-guy.service'
+import {PersonService} from '../services/person.service'
 
 @Component({
   moduleId: module.id,
@@ -72,8 +72,7 @@ export class BadGuysComponent implements OnInit {
   badGuys: Person[];
   selectedBadGuy: Person;
 
-  constructor(
-    private badGuysService: BadGuyService) {
+  constructor(private personService: PersonService) {
   }
 
   onSelect(badGuy: Person): void {
@@ -81,6 +80,6 @@ export class BadGuysComponent implements OnInit {
   };
 
   getBadGuys(): void {
-      this.badGuysService.getBadGuys().then(badGuys => this.badGuys = badGuys);
+    this.personService.getBadGuys().then(badGuys => this.badGuys = badGuys);
   }
 }

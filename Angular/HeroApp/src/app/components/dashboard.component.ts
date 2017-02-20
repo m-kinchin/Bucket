@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import { Person } from '../models/person';
-import { HeroService } from '../services/hero.service';
-import { BadGuyService } from '../services/bad-guy.service';
+import {Person} from '../models/person';
+import {PersonService} from '../services/person.service';
 
 @Component({
   moduleId: module.id,
@@ -9,16 +8,17 @@ import { BadGuyService } from '../services/bad-guy.service';
   templateUrl: '../templates/dashboard.component.html',
 })
 
-export class DashboardComponent implements OnInit{
+export class DashboardComponent implements OnInit {
   ngOnInit(): void {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes.slice(1,5));
-    this.badGuyService.getBadGuys().then(badGuys => this.badGuys = badGuys.slice(1,5));
+    this.personService.getHeroes().then(heroes => this.heroes = heroes.slice(1, 5));
+    this.personService.getBadGuys().then(badGuys => this.badGuys = badGuys.slice(1, 5));
   }
 
   heroes: Person[] = [];
   badGuys: Person[] = [];
 
-  constructor(private heroService: HeroService, private badGuyService: BadGuyService){}
+  constructor(private personService: PersonService) {
+  }
 
 
 }

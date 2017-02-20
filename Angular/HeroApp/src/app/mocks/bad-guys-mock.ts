@@ -1,4 +1,4 @@
-import { Person } from '../models/person';
+import {Person} from '../models/person';
 export const BADGUYS: Person[] = [
   {id: 110, name: 'Mr. Nice Bad'},
   {id: 120, name: 'Narco Bad'},

@@ -2,7 +2,7 @@ import {Component, Input} from '@angular/core';
 import {OnInit} from '@angular/core';
 import {Person} from '../models/person';
 import {PersonDetailsComponent} from './person-details.component';
-import {HeroService} from '../services/hero.service';
+import {PersonService} from '../services/person.service';
 
 @Component({
   moduleId: module.id,
@@ -73,7 +73,7 @@ export class HeroesComponent implements OnInit {
   selectedHero: Person;
 
   constructor(
-    private heroService: HeroService) {
+    private personService: PersonService) {
   }
 
   onSelect(hero: Person): void {
@@ -81,6 +81,6 @@ export class HeroesComponent implements OnInit {
   };
 
   getHeroes(): void {
-      this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+      this.personService.getHeroes().then(heroes => this.heroes = heroes);
   }
 }
