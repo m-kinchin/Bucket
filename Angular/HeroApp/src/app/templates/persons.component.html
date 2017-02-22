@@ -1,0 +1,8 @@
+<h2>My {{title}}</h2>
+<ul class="heroes">
+  <a *ngFor="let person of persons" [routerLink]="['/detail', person.id]" class="col-1-4">
+    <li>
+      <span class="badge">{{person.id}}</span> {{person.name}}
+    </li>
+  </a>
+</ul>

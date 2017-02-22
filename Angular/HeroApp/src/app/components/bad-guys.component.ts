@@ -1,13 +1,13 @@
 import {Component, Input} from '@angular/core';
-import {OnInit} from '@angular/core';
-import {Person} from '../models/person';
+import {OnInit}           from '@angular/core';
+import {Person}                 from '../models/person';
 import {PersonDetailsComponent} from './person-details.component';
 import {PersonService} from '../services/person.service'
 
 @Component({
   moduleId: module.id,
   selector: 'bad-guys',
-  templateUrl: '../templates/bad-guys.component.html',
+  templateUrl: '../templates/persons.component.html',
   styles: [`
   .selected-odd {
     background-color: #CFD8DC !important;
@@ -69,7 +69,8 @@ export class BadGuysComponent implements OnInit {
     this.getBadGuys();
   }
 
-  badGuys: Person[];
+  title = "Bad Guys";
+  persons: Person[];
   selectedBadGuy: Person;
 
   constructor(private personService: PersonService) {
@@ -80,6 +81,6 @@ export class BadGuysComponent implements OnInit {
   };
 
   getBadGuys(): void {
-    this.personService.getBadGuys().then(badGuys => this.badGuys = badGuys);
+    this.personService.getBadGuys().then(badGuys => this.persons = badGuys);
   }
 }

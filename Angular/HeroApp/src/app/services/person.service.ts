@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {Person} from '../models/person';
-import {HEROES} from '../mocks/heroes-mock';
-import {BADGUYS} from '../mocks/bad-guys-mock';
+import {Injectable}   from '@angular/core';
+import {Person}       from '../models/person';
+import {HEROES}       from '../mocks/heroes-mock';
+import {BADGUYS}      from '../mocks/bad-guys-mock';
 
 @Injectable()
 export class PersonService {
