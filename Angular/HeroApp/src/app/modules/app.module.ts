@@ -5,11 +5,11 @@ import {RouterModule}   from '@angular/router';
 
 import {StartupComponent}  from '../components/startup.component';
 import {PersonDetailsComponent}  from '../components/person-details.component';
-import {HeroesComponent} from "../components/heroes.component";
-import {BadGuysComponent} from "../components/bad-guys.component";
+import {PersonsComponent} from "../components/persons.component";
 import {DashboardComponent} from "../components/dashboard.component";
 import {PersonService} from "../services/person.service";
 import {RoutingModule} from "./routing.module";
+import {CapitalizePipe} from "../pipes/capitalize.pipe";
 
 @NgModule({
   imports: [
@@ -20,9 +20,9 @@ import {RoutingModule} from "./routing.module";
   declarations: [
     StartupComponent,
     PersonDetailsComponent,
-    HeroesComponent,
+    PersonsComponent,
     DashboardComponent,
-    BadGuysComponent
+    CapitalizePipe
   ],
   bootstrap: [
     StartupComponent

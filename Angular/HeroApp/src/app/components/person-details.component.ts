@@ -17,9 +17,11 @@ export class PersonDetailsComponent implements OnInit {
       .switchMap((params: Params) => this.personService.getPerson(+params['id']))
       .subscribe(person => this.person = person);
   }
+
   goBack(): void {
     this.location.back();
   }
+
   @Input() person: Person;
 
   constructor(private personService: PersonService,
