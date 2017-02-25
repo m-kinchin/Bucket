@@ -19,6 +19,4 @@ export class DashboardComponent implements OnInit {
 
   constructor(private personService: PersonService) {
   }
-
-
 }

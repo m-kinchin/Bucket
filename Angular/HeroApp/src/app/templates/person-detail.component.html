@@ -1,11 +1,8 @@
 <div *ngIf="person && person.id % 2 == 0">
-  <h2>{{person.name | uppercase}} is my hero!</h2>
-  <div><label>id: </label>{{person.id}}</div>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="person.name" placeholder="name"/>
-  </div>
-  <button (click)="goBack()">Back</button>
+  <h2>
+    {{person.name | uppercase}} is my hero
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
 </div>
 <div *ngIf="person && person.id % 2 != 0">
   <h2>{{person.name | uppercase}} is my hero!</h2>
