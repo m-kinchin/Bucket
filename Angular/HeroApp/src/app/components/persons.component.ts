@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Params}   from '@angular/router';
+import {ActivatedRoute, Params, Router}   from '@angular/router';
 import {Person}                 from '../models/person';
 import {PersonService} from '../services/person.service'
 import 'rxjs/add/operator/switchMap';
@@ -12,31 +12,40 @@ import 'rxjs/add/operator/switchMap';
 })
 
 export class PersonsComponent implements OnInit {
+  wrongPersonMessage = "Wrong person's type.";
+  persons: Person[];
+  personsType: string;
+  selectedPerson: Person;
+
+  constructor(private personService: PersonService,
+              private route: ActivatedRoute,
+              private router: Router) {
+  }
+
   ngOnInit(): void {
     this.route.params
-      .switchMap((params: Params) => this.getPersons(params['personsType']))
+      .switchMap((params: Params) => Promise.resolve(this.getPersons(params['personsType'])))
       .subscribe(personsType => this.personsType = personsType);
   }
 
-  persons: Person[];
-
-  wrongPersonMessage = "Wrong person's type."
-  personsType: string;
-
-  constructor(private personService: PersonService,
-  private route: ActivatedRoute) {
-  }
+  onSelect(person: Person): void {
+    this.selectedPerson = person;
+  };
 
   getPersons(personsType: string): string {
-    if(personsType == 'heroes') {
+    if (personsType == 'heroes') {
       this.personService.getHeroes().then(heroes => this.persons = heroes);
       return personsType;
     }
-    else if(personsType == 'bad_guys') {
+    else if (personsType == 'bad_guys') {
       this.personService.getBadGuys().then(badGuys => this.persons = badGuys);
       return personsType;
     }
     this.persons = [];
     return ' ';
+  }
+
+  gotoDetail(): void {
+    this.router.navigate(['/detail', this.selectedPerson.id]);
   }
 }
