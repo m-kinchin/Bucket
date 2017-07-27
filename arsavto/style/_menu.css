@@ -1,0 +1,76 @@
+.menu {
+    font-family: arial, sans-serif;
+    position:relative;
+    font-size:12px;
+    z-index:100;
+}
+
+.menu ul li a, .menu ul li a:visited{
+    display:block;
+    text-decoration:none;
+    width:104px;
+    height:22px;
+    text-align:center;
+    line-height:20px;
+    font-size:12px;
+    overflow:hidden;
+}
+
+.menu ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+.menu ul li {
+    float:left;
+    position:relative;
+}
+
+.menu ul li ul {
+    display: none;
+}
+
+.menu ul li:hover a {
+    background:#d2dae1;
+}
+
+.menu ul li:hover ul {
+    display:block;
+    position:absolute;
+    top:21px;
+    left:0;
+    width:105px;
+}
+
+.menu ul li:hover ul li a.hide {
+    background:#d2dae1;
+}
+
+.menu ul li:hover ul li:hover a.hide {
+    background:#d2dae1;
+}
+
+.menu ul li:hover ul li ul {
+    display: none;
+}
+
+.menu ul li:hover ul li a {
+    display:block;
+    border: 1px solid #d2dae1;
+}
+
+.menu ul li:hover ul li a:hover {
+    border: 1px dotted #339999;
+}
+
+.menu ul li:hover ul li:hover ul {
+    display:block;
+    position:absolute;
+    left:105px;
+    top:0;
+}
+
+.menu ul li:hover ul li:hover ul.left {
+    left:-105px;
+}

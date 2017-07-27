@@ -1,0 +1,117 @@
+/*html, body {
+	height: 100%;
+} */
+body {
+
+	font: 	68.75%/1.4 Verdana, Tahoma, Arial;
+	line-height: 1.8em; /* Высота строки */
+	background-color: #ffffff;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	#color: #ffffff;
+	color: #404040;
+	text-decoration: none;
+	}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	#color: #ffffff;
+	color: #404040;
+	text-decoration: none;
+}
+a:active {
+	#color: #ffffff;
+	color: #404040;
+	text-decoration: none;
+}
+
+h1 { font: 20px Helvetica; }
+h2 { font: 18px Helvetica; }
+h3 { font: 16px Helvetica; }
+h4 { font: 14px Helvetica; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.1em; }
+
+p {
+	margin: 1.5em 0 1.5em 0;
+}
+
+ ol {
+	margin-left: 1em;
+	padding-left: 1em;
+	list-style-position: outside;
+}
+#ul { list-style: disc; }
+ol { list-style: decimal; }
+#	li { padding-left: -1em; margin-left: 0.6em; }
+
+.inner img {
+	padding: 5px;
+}
+	caption {
+
+	}
+	tbody {
+
+	}
+	thead {
+
+	}
+.form_table {
+//border: 1px solid #BCBCBC;
+				padding: 2px 7px 2px 7px;
+				border-style: outside;
+				}
+	th, td {
+				padding: 2px 7px 2px 7px;
+			}
+			th {
+				font-weight: bold;
+			}
+
+
+table.bord {
+	border: 1px;
+}
+
+table.gallery {
+	border: none;
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+}
+	table.gallery td {
+		background: none;
+		border: none;
+		margin: 0;
+		padding: 5px;
+	}
+.catalog_td{
+border:1px dotted #AAA;	
+text-align: left;
+
+}
+.catalog_td_head{
+border:1px dotted #AAA;	
+font-weight: bold;
+text-align: left;
+}
+.contact{
+    color: #404040;	
+    font-size: 1.3em;
+    }
+.image_catalog{
+	border-color: #454545;
+	border-width: 1; 
+	padding: 10px 10px 10px 20px;
+	}

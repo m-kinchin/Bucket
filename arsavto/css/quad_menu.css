@@ -1,0 +1,170 @@
+#content h1.title {
+	/*border: 1px solid #ff0000;*/
+	color: #009933;
+	display: block;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 3em;
+	font-weight: normal;
+	margin: 0 0 15px 0;
+	padding: 0;
+	text-align: center;
+}
+#content p.comment {
+	color: #009933;
+	display: block;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.6em;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+ul.tiles-box {
+    margin-top: 15px;
+    padding-left: 100px;
+}
+
+.tiles-box,
+.tiles-box li,
+.tiles-box ul {
+	/* Этот класс создаёт контейнер для плиточной организации внутренних блоков.
+	Применяется к <ul> */
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.tiles-box .tile {
+	/* Этот класс определяет текущий блок как плитку в контейнере .tiles-box.
+	Применяется к <li> */
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px 10px 0;
+	padding: 0px;
+}
+.tiles-box .tile span {
+	margin: 0 0.6em 0 0.6em;
+}
+
+.quad-01,
+.quad-02,
+.quad-03,
+.quad-04 {
+	display: block;
+	height: 190px;
+	position: relative;
+	width: 350px;
+}
+.tiles-box li a.title:link,
+.tiles-box li a.title:active,
+.tiles-box li a.title:hover,
+.tiles-box li a.title:visited {
+	color: #000000;
+	display: block;
+	font-family: Tahoma, sans-serif;
+	font-size: 1.6em;
+	text-transform: lowercase;
+}
+.tiles-box li a:link,
+.tiles-box li a:active,
+.tiles-box li a:visited {
+	text-decoration: none;
+}
+.tiles-box li a:hover {
+	text-decoration: underline;
+}
+.quad-01 a.title {
+	float: left;
+	padding: 8px 50px 20px 60px;
+	/*width: 375px;
+	height: 66px;*/
+}
+.quad-02 a.title {
+	float: right;
+	padding: 8px 20px 20px 60px;
+	/*width: 375px;
+	height: 66px;*/
+}
+.quad-03 a.title {
+	position: absolute;
+	padding: 20px 60px 10px 60px;
+	bottom: 0;
+	left: 0;
+	/*width: 375px;
+	height: 66px;*/
+}
+.quad-04 a.title {
+	position: absolute;
+	padding: 20px 52px 10px 80px;
+	bottom: 0;
+	right: 0;
+}
+.quad-01 ul, .quad-01 ul span,
+.quad-03 ul, .quad-03 ul span {
+	float: right;
+	text-align: right;
+}
+.quad-01 ul li,
+.quad-03 ul li {
+	padding-right: 2em;
+}
+.quad-02 ul li,
+.quad-04 ul li {
+	padding-left: 2em;
+}
+.quad-01 {
+	background: url(../images/quad_01.jpg) no-repeat 0 0;
+}
+.quad-02 {
+	background: url(../images/quad_02.jpg) no-repeat 0 0;
+}
+.quad-03 {
+	background: url(../images/quad_03.jpg) no-repeat 0 0;
+}
+.quad-04 {
+	background: url(../images/quad_04.jpg) no-repeat 0 0;
+}
+	li.quad-01:hover {
+		background: url(../images/quad_01.jpg) no-repeat 0 -190px;
+	}
+	li.quad-02:hover {
+		background: url(../images/quad_02.jpg) no-repeat 0 -190px;
+	}
+	li.quad-03:hover {
+		background: url(../images/quad_03.jpg) no-repeat 0 -190px;
+	}
+	li.quad-04:hover {
+		background: url(../images/quad_04.jpg) no-repeat 0 -190px;
+	}
+		.tiles-box ul {
+			display: none;
+		}
+			.tiles-box ul a:link,
+			.tiles-box ul a:visited,
+			.tiles-box ul a:hover,
+			.tiles-box ul a:active {
+				color: #ffffff;
+			}
+		.tiles-box li:hover ul {
+			color: #ffffff;
+			display: block;
+			font-size: 1.4em;
+			position: absolute;
+		}
+			.quad-01 ul {
+				right: 0;
+				bottom: 30px;
+			}
+			.quad-02 ul {
+				left: 0;
+				bottom: 30px;
+			}
+			.quad-03 ul {
+				right: 0;
+				top: 30px;
+			}
+			.quad-04 ul {
+				left: 0;
+				top: 30px;
+			}
