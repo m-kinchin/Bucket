@@ -4,7 +4,7 @@
 					<td class="licounter">
 						<div align="left">
 						<!--LiveInternet counter-->
-							<script type="text/javascript">document.write("<a href='http://www.liveinternet.ru/click' target=_blank><img src='//counter.yadro.ru/hit?t14.2;r" + escape(document.referrer) + ((typeof(screen) == "undefined") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";" + Math.random() + "' border=0 width=88 height=31 alt='' title='LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня'><\/a>")</script>
+							<script type="text/javascript">document.write("<a href='http://www.liveinternet.ru/click' target=_blank><img src='//counter.yadro.ru/hit?t14.2;r" + escape(document.referrer) + ((typeof(screen) == "undefined") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";" + Math.random() + "' border=0 width=88 height=31 alt='' title='LiveInternet: РїРѕРєР°Р·Р°РЅРѕ С‡РёСЃР»Рѕ РїСЂРѕСЃРјРѕС‚СЂРѕРІ Р·Р° 24 С‡Р°СЃР°, РїРѕСЃРµС‚РёС‚РµР»РµР№ Р·Р° 24 С‡Р°СЃР° Рё Р·Р° СЃРµРіРѕРґРЅСЏ'><\/a>")</script>
 						<!--/LiveInternet--></div>
 						<div>
 						<!-- Yandex.Metrika counter -->
@@ -38,25 +38,25 @@
 					<td align="right" width="750">
 						<table width="250" style="margin-top: 20px;">
 							<tr>
-								<td align="right">Тел:</td>
+								<td align="right">РўРµР»:</td>
 								<td align="left">(843)296-25-74</td>
 							</tr>
 							<tr>
-								<td align="right">Тел:</td>
+								<td align="right">РўРµР»:</td>
 								<td align="left">(843)226-0-622</td>
 							</tr>
 							<tr>
 								<td align="right">ICQ:</td>
 								<td align="left">461335742 <img style="border:none;" alt="*" align="absmiddle"
 																src="http://status.icq.com/online.gif?icq=461335742&img=5"/>
-									Евгений
+									Р•РІРіРµРЅРёР№
 								</td>
 							</tr>
 							<tr>
 								<td align="right">ICQ:</td>
 								<td align="left">353540612 <img style="border:none;" alt="*" align="absmiddle"
 																src="http://status.icq.com/online.gif?icq=353540612&img=5"/>
-									Георгий
+									Р“РµРѕСЂРіРёР№
 								</td>
 							</tr>
 							<tr>

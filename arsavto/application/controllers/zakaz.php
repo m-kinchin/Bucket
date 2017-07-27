@@ -21,9 +21,9 @@ class Zakaz extends CI_Controller
         $this->data['bottom'] = $this->parser->parse('bottomview',$this->data, TRUE);
         $this->data['head'] = $this->parser->parse('headview',$this->data, TRUE);
         $this->data['jscript'] = '';
-        $this->check_array['type_kpp'] = array('key' => 'type_kpp', 'default' => 0, 'array'=> array('Автоматическая', 'Ручная', 'Вариаторная'));
-        $this->check_array['type_privod'] = array('key' => 'type_privod', 'default' => 0, 'array'=> array('Передний', 'Задний', 'Полный'));
-        $this->check_array['type_wheel'] = array('key' => 'type_wheel', 'default' => 0, 'array'=> array('Левый', 'Правый'));
+        $this->check_array['type_kpp'] = array('key' => 'type_kpp', 'default' => 0, 'array'=> array('РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ', 'Р СѓС‡РЅР°СЏ', 'Р’Р°СЂРёР°С‚РѕСЂРЅР°СЏ'));
+        $this->check_array['type_privod'] = array('key' => 'type_privod', 'default' => 0, 'array'=> array('РџРµСЂРµРґРЅРёР№', 'Р—Р°РґРЅРёР№', 'РџРѕР»РЅС‹Р№'));
+        $this->check_array['type_wheel'] = array('key' => 'type_wheel', 'default' => 0, 'array'=> array('Р›РµРІС‹Р№', 'РџСЂР°РІС‹Р№'));
         $this->input_array = array('contact', 'model', 'year', 'body', 'value_engine', 'power', 'text_order', 'vin');
     }
 
@@ -37,24 +37,24 @@ class Zakaz extends CI_Controller
             $this->load->library('email');
             $config_email = array('protocol' => 'sendmail', 'mailpath' => '/usr/sbin/sendmail', 'mailtype' => 'html', 'charset' => 'windows-1251', 'useragent' => 'www.arsavto.com');
             $this->email->initialize($config_email);
-            $this->email->from('info@arsavto.com', 'ООО АРС-Авто');
+            $this->email->from('info@arsavto.com', 'РћРћРћ РђР РЎ-РђРІС‚Рѕ');
             $this->email->to($this->data['email']);
-            $this->email->subject('Заявка с сайта');
+            $this->email->subject('Р—Р°СЏРІРєР° СЃ СЃР°Р№С‚Р°');
             $this->email->message($this->parser->parse('mailview',$this->request, true));	
 
             if($this->email->send())
             {
-                $this->data['message'] = '<tr><td colspan="4" class="ok">Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в ближайшее время.</td></tr>';
+                $this->data['message'] = '<tr><td colspan="4" class="ok">Р’Р°С€Р° Р·Р°СЏРІРєР° СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅР°.<br/>РќР°С€ РјРµРЅРµРґР¶РµСЂ СЃРІСЏР¶РµС‚СЃСЏ СЃ Р’Р°РјРё РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ.</td></tr>';
                 $this->request = array();
             }
             else 
             {
-                $this->data['message'] = '<tr><td colspan="4" class="error">Во время отправки заявки возникли проблемы.</br>Позвоните нам и мы ответим на Ваш вопрос незамедлительно или попробуйте отправить заявку позднее.</td></tr>';
+                $this->data['message'] = '<tr><td colspan="4" class="error">Р’Рѕ РІСЂРµРјСЏ РѕС‚РїСЂР°РІРєРё Р·Р°СЏРІРєРё РІРѕР·РЅРёРєР»Рё РїСЂРѕР±Р»РµРјС‹.</br>РџРѕР·РІРѕРЅРёС‚Рµ РЅР°Рј Рё РјС‹ РѕС‚РІРµС‚РёРј РЅР° Р’Р°С€ РІРѕРїСЂРѕСЃ РЅРµР·Р°РјРµРґР»РёС‚РµР»СЊРЅРѕ РёР»Рё РїРѕРїСЂРѕР±СѓР№С‚Рµ РѕС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ РїРѕР·РґРЅРµРµ.</td></tr>';
             }
         }
         elseif(isset($this->request['captcha']) && $this->request['captcha'] != $_SESSION['code'])
         {
-            $this->data['message'] = '<tr><td colspan="4" class="error">Неверный код капчи. Пожалуйста, повторите ввод.</td></tr>';
+            $this->data['message'] = '<tr><td colspan="4" class="error">РќРµРІРµСЂРЅС‹Р№ РєРѕРґ РєР°РїС‡Рё. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ.</td></tr>';
         }
         else
         {
