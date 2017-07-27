@@ -30,7 +30,7 @@ class _Admin extends CI_Controller{
 			if($this->_auth!=1)
 			{
 			
-				if($this->_auth == -1) $this->data['message'] = '<table  style="width:100%; height:80px; border: none;"><tr><td align="center"><font style="color: #FF0000;">Не верно набран логин либо пароль</font></td></tr></table>';
+				if($this->_auth == -1) $this->data['message'] = '<table  style="width:100%; height:80px; border: none;"><tr><td align="center"><font style="color: #FF0000;">РќРµ РІРµСЂРЅРѕ РЅР°Р±СЂР°РЅ Р»РѕРіРёРЅ Р»РёР±Рѕ РїР°СЂРѕР»СЊ</font></td></tr></table>';
 				else $this->data['message'] = '';
 				$this->data['menu'] =  $this->parser->parse('_adminformview',$this->data,true);
 				$this->data['content'] = '';
@@ -128,8 +128,8 @@ class _Admin extends CI_Controller{
 			$this->data['cat'] = PregMatchInt($this->uri->segment(4,0),0);
 			$this->data['model'] = PregMatchInt($this->uri->segment(3,0),0);
 			$this->data['id'] = '';
-			$this->form_validation->set_message('required', 'Поле обязательно для заполнения.');
-			$this->form_validation->set_message('numeric', 'Не является числом.');
+			$this->form_validation->set_message('required', 'РџРѕР»Рµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ.');
+			$this->form_validation->set_message('numeric', 'РќРµ СЏРІР»СЏРµС‚СЃСЏ С‡РёСЃР»РѕРј.');
 		
 			$this->form_validation->set_rules($this->config_form);
 			
@@ -202,8 +202,8 @@ class _Admin extends CI_Controller{
 			
 			if($this->data['id'] != 0)
 			{
-				$this->form_validation->set_message('required', 'Поле обязательно для заполнения.');
-				$this->form_validation->set_message('numeric', 'Не является числом.');
+				$this->form_validation->set_message('required', 'РџРѕР»Рµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ.');
+				$this->form_validation->set_message('numeric', 'РќРµ СЏРІР»СЏРµС‚СЃСЏ С‡РёСЃР»РѕРј.');
 				$this->form_validation->set_rules($this->config_form); 
 				if(!isset($_REQUEST['first_time']))
 				{

@@ -1,13 +1,13 @@
 <table>
-	<tr><td colspan = "7" align="left"><a href="#" onClick="winop('{base_url}_admin/add/{model}/{cat}/','350','400','500','50')"><h3>Добавить...</h3></a></td></tr>
+	<tr><td colspan = "7" align="left"><a href="#" onClick="winop('{base_url}_admin/add/{model}/{cat}/','350','400','500','50')"><h3>Р”РѕР±Р°РІРёС‚СЊ...</h3></a></td></tr>
 	<tr>
-		<td style=\"border-bottom: 1px solid #000;\">Наименование</td>
-		<td style=\"border-bottom: 1px solid #000;\">Цена</td>
-		<td style=\"border-bottom: 1px solid #000;\">Фирма-производитель</td>
-		<td style=\"border-bottom: 1px solid #000;\">Номер по каталогу</td>
-		<td style=\"border-bottom: 1px solid #000;\">Изображение</td>
-		<td style=\"border-bottom: 1px solid #000;\">Товар недели</td>
-		<td style=\"border-bottom: 1px solid #000;\">Удалить</td>
+		<td style=\"border-bottom: 1px solid #000;\">РќР°РёРјРµРЅРѕРІР°РЅРёРµ</td>
+		<td style=\"border-bottom: 1px solid #000;\">Р¦РµРЅР°</td>
+		<td style=\"border-bottom: 1px solid #000;\">Р¤РёСЂРјР°-РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ</td>
+		<td style=\"border-bottom: 1px solid #000;\">РќРѕРјРµСЂ РїРѕ РєР°С‚Р°Р»РѕРіСѓ</td>
+		<td style=\"border-bottom: 1px solid #000;\">РР·РѕР±СЂР°Р¶РµРЅРёРµ</td>
+		<td style=\"border-bottom: 1px solid #000;\">РўРѕРІР°СЂ РЅРµРґРµР»Рё</td>
+		<td style=\"border-bottom: 1px solid #000;\">РЈРґР°Р»РёС‚СЊ</td>
 	</tr>
 	{catalog}
 	<tr>
@@ -15,8 +15,8 @@
 		<td>{price}</td>
 		<td>{firm}</td>
 		<td>{ncat}</td>
-		<td><a id="zoomme" href="#" title="Нажмите"><img src="{img}" width="50" height="50" alt="{img}"></a></td>
+		<td><a id="zoomme" href="#" title="РќР°Р¶РјРёС‚Рµ"><img src="{img}" width="50" height="50" alt="{img}"></a></td>
 		<td><input type="checkbox" {sale} disabled></td>
-		<td align="center"><a href="{base_url}_admin/del/{id}">Удалить</a></td>
+		<td align="center"><a href="{base_url}_admin/del/{id}">РЈРґР°Р»РёС‚СЊ</a></td>
 	</tr>{/catalog}
 </table>

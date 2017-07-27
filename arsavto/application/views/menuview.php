@@ -4,11 +4,11 @@
 		<table class="menu">
 			<tr class="menu">
 				<td style="width: 100%"></td>
-				<td class="menu {actInd}"><a href="{base_url}">Главная</a></td>
-				<td class="menu {actCat}"><a href="{base_url}catalog/">Каталог&nbspтоваров</a></td>
-				<td class="menu {actOrd}"><a href="{base_url}zakaz/">Заказ&nbspзапчастей</a></td>
-				<td class="menu {actSrv}"><a href="{base_url}service/">Сервисная&nbsp;зона</a></td>
-				<td class="menu {actCon}"><a href="{base_url}contacts/">Контакты</a></td>
+				<td class="menu {actInd}"><a href="{base_url}">Р“Р»Р°РІРЅР°СЏ</a></td>
+				<td class="menu {actCat}"><a href="{base_url}catalog/">РљР°С‚Р°Р»РѕРі&nbspС‚РѕРІР°СЂРѕРІ</a></td>
+				<td class="menu {actOrd}"><a href="{base_url}zakaz/">Р—Р°РєР°Р·&nbspР·Р°РїС‡Р°СЃС‚РµР№</a></td>
+				<td class="menu {actSrv}"><a href="{base_url}service/">РЎРµСЂРІРёСЃРЅР°СЏ&nbsp;Р·РѕРЅР°</a></td>
+				<td class="menu {actCon}"><a href="{base_url}contacts/">РљРѕРЅС‚Р°РєС‚С‹</a></td>
 			</tr>
 			<tr><td><td colspan="5" class="under_menu"></td></tr>
 		</table>

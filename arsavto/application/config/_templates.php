@@ -1,11 +1,11 @@
 <?php
-// файл с шаблонами частей страницы
+// С„Р°Р№Р» СЃ С€Р°Р±Р»РѕРЅР°РјРё С‡Р°СЃС‚РµР№ СЃС‚СЂР°РЅРёС†С‹
 
-// шаблон заголовка страницы
+// С€Р°Р±Р»РѕРЅ Р·Р°РіРѕР»РѕРІРєР° СЃС‚СЂР°РЅРёС†С‹
 $config['head'] = '<meta http-equiv="content-type" content="text/html; charset=windows-1251;">
-<meta name="description" content="Автозапчасти Хонда Казань" />
-<meta name="keywords" content="Автозапчасти Хонда Казань" />
-<meta name="robots" content="Автозапчасти Хонда Казань" />
+<meta name="description" content="РђРІС‚РѕР·Р°РїС‡Р°СЃС‚Рё РҐРѕРЅРґР° РљР°Р·Р°РЅСЊ" />
+<meta name="keywords" content="РђРІС‚РѕР·Р°РїС‡Р°СЃС‚Рё РҐРѕРЅРґР° РљР°Р·Р°РЅСЊ" />
+<meta name="robots" content="РђРІС‚РѕР·Р°РїС‡Р°СЃС‚Рё РҐРѕРЅРґР° РљР°Р·Р°РЅСЊ" />
 <link rel="icon" href="favicon.ico"/>
 <link rel="stylesheet" href="http://arsavto/css/reset.css" type="text/css" media="screen"/>
 <link rel="stylesheet" href="http://arsavto/css/base.css" type="text/css" media="screen"/>';	

@@ -32,12 +32,12 @@ $(function(){
 
 </script>
 <title>
-Автозапчасти для автомобилей Honda и Acura
+РђРІС‚РѕР·Р°РїС‡Р°СЃС‚Рё РґР»СЏ Р°РІС‚РѕРјРѕР±РёР»РµР№ Honda Рё Acura
 </title>
 <meta http-equiv="content-type" content="text/html; charset=windows-1251;">
-<meta name="description" content="Автозапчасти Хонда Казань" />
-<meta name="keywords" content="Автозапчасти Хонда Казань" />
-<meta name="robots" content="Автозапчасти Хонда Казань" />
+<meta name="description" content="РђРІС‚РѕР·Р°РїС‡Р°СЃС‚Рё РҐРѕРЅРґР° РљР°Р·Р°РЅСЊ" />
+<meta name="keywords" content="РђРІС‚РѕР·Р°РїС‡Р°СЃС‚Рё РҐРѕРЅРґР° РљР°Р·Р°РЅСЊ" />
+<meta name="robots" content="РђРІС‚РѕР·Р°РїС‡Р°СЃС‚Рё РҐРѕРЅРґР° РљР°Р·Р°РЅСЊ" />
 <link rel="icon" href="favicon.ico"/>
 <link rel="stylesheet" href="{base_url}css/reset.css" type="text/css" media="screen"/>
 <link rel="stylesheet" href="{base_url}css/_menu.css" type="text/css" media="screen"/>

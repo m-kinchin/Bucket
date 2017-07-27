@@ -71,7 +71,7 @@ class Catalog extends CI_Controller{
 			}
 			else
 			{
-				//Вывод списка запчастей
+				//Р’С‹РІРѕРґ СЃРїРёСЃРєР° Р·Р°РїС‡Р°СЃС‚РµР№
 				$query = $this->db->query("SELECT brand, name FROM models WHERE id='".$model."'");
 				$query = $query->row_array();
 				$this->data['model'] = $query['name'];
@@ -119,12 +119,12 @@ class Catalog extends CI_Controller{
 							$img = 'no_image.jpg';
 							$class = '';
 						}
-						$table_array[] = '<img'.$class.' src="'.base_url().'img/'.$img.'" style="border-color: #454545; border-width: 1; padding: 10px 10px 10px 20px;'.$style.'"/><br/><b>'.$v['name'].'</b><br/>Производитель: <b>'.$v['firm'].'</b><br/>Каталожный номер:<br/><b>'.($v['ncat'] != ''?$v['ncat']:'отсутствует').'</b><br/>Цена за шт.: <font color="#ea2a37" style="font-size: 15px; font-color:#F00;"><b>'.$v['price'].'</b></font>';
+						$table_array[] = '<img'.$class.' src="'.base_url().'img/'.$img.'" style="border-color: #454545; border-width: 1; padding: 10px 10px 10px 20px;'.$style.'"/><br/><b>'.$v['name'].'</b><br/>РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ: <b>'.$v['firm'].'</b><br/>РљР°С‚Р°Р»РѕР¶РЅС‹Р№ РЅРѕРјРµСЂ:<br/><b>'.($v['ncat'] != ''?$v['ncat']:'РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚').'</b><br/>Р¦РµРЅР° Р·Р° С€С‚.: <font color="#ea2a37" style="font-size: 15px; font-color:#F00;"><b>'.$v['price'].'</b></font>';
 					}
 					$table_list = $this->table->make_columns($table_array, 3);
 					$this->data['table'] = $this->table->generate($table_list);
 				}
-				else $this->data['table'] = '<br/><h2>По Вашему запросу ничего не найдено.</h2>';
+				else $this->data['table'] = '<br/><h2>РџРѕ Р’Р°С€РµРјСѓ Р·Р°РїСЂРѕСЃСѓ РЅРёС‡РµРіРѕ РЅРµ РЅР°Р№РґРµРЅРѕ.</h2>';
 				$this->data['content'] = $this->parser->parse('catalogcommissionview',$this->data,true);
 			}
 			$this->parser->parse('mainview',$this->data);
@@ -134,7 +134,7 @@ class Catalog extends CI_Controller{
 		{
 			$catalog_id = 2;
 			$this->data['model'] = '';
-			$this->data['brand'] = 'Комиссионные товары';
+			$this->data['brand'] = 'РљРѕРјРёСЃСЃРёРѕРЅРЅС‹Рµ С‚РѕРІР°СЂС‹';
 			$id_array = $this->Catalog_model->get_type_parts($catalog_id);
 			$default_id_from_query = $this->Catalog_model->get_default_type_parts($catalog_id);
 
@@ -178,12 +178,12 @@ class Catalog extends CI_Controller{
 						$img = 'no_image.jpg';
 						$class = '';
 					}
-					$table_array[] = '<div style="width:100px;height:100px;"><img'.$class.' src="'.base_url().'img/'.$img.'" style="border-color: #454545; border-width: 1; padding: 10px 10px 10px 20px;'.$style.'"/></div><br/><b>'.$v['name'].'</b><br/>Производитель: <b>'.$v['firm'].'</b><br/>Состояние:<br/><b>'.$v['des'].'</b><br/>Цена за шт.: <font color="#ea2a37" style="font-size: 15px; font-color:#F00;"><b>'.$v['price'].'</b></font>';
+					$table_array[] = '<div style="width:100px;height:100px;"><img'.$class.' src="'.base_url().'img/'.$img.'" style="border-color: #454545; border-width: 1; padding: 10px 10px 10px 20px;'.$style.'"/></div><br/><b>'.$v['name'].'</b><br/>РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ: <b>'.$v['firm'].'</b><br/>РЎРѕСЃС‚РѕСЏРЅРёРµ:<br/><b>'.$v['des'].'</b><br/>Р¦РµРЅР° Р·Р° С€С‚.: <font color="#ea2a37" style="font-size: 15px; font-color:#F00;"><b>'.$v['price'].'</b></font>';
 				}
 				$table_list = $this->table->make_columns($table_array, 3);
 				$this->data['table'] = $this->table->generate($table_list);
 			}
-			else $this->data['table'] = '<br/><h2>По Вашему запросу ничего не найдено.</h2>';
+			else $this->data['table'] = '<br/><h2>РџРѕ Р’Р°С€РµРјСѓ Р·Р°РїСЂРѕСЃСѓ РЅРёС‡РµРіРѕ РЅРµ РЅР°Р№РґРµРЅРѕ.</h2>';
 			$this->data['content'] = $this->parser->parse('catalogcommissionview',$this->data,true);
 			$this->parser->parse('mainview',$this->data);
 		}
@@ -195,26 +195,26 @@ class Catalog extends CI_Controller{
 			$this->data['search'] = $search;
 			$this->load->helper('Form');
 			$form['input'] = array('name' => 'search', 'id' => 'search', 'value' => $this->data['search'], 'maxlength'   => '20', 'size' => '20');
-			$form['submit'] = array('value' => 'Поиск');
+			$form['submit'] = array('value' => 'РџРѕРёСЃРє');
 			$this->data['form'] = form_open(base_url().'catalog/search',array('accept-charset'=>'windows-1251','method' => 'post')).form_input($form['input'])." ".form_submit($form['submit']).form_close();
 			
 			$this->page_config['num_links'] = 2;
-			$this->page_config['first_link'] = '<< В начало';
-			$this->page_config['next_link'] = 'Далее >';
-			$this->page_config['prev_link'] = '< Назад';
-			$this->page_config['last_link'] = 'В конец >>';
+			$this->page_config['first_link'] = '<< Р’ РЅР°С‡Р°Р»Рѕ';
+			$this->page_config['next_link'] = 'Р”Р°Р»РµРµ >';
+			$this->page_config['prev_link'] = '< РќР°Р·Р°Рґ';
+			$this->page_config['last_link'] = 'Р’ РєРѕРЅРµС† >>';
 			$this->page_config['uri_segment'] = 4;
 			
 			if(!preg_match("/^(\d|\d\d|\d\d\d)$/",$this->uri->segment(4, 0))) $page_jump = 0;
 			else $page_jump = $this->uri->segment(4, 0);
-			if($search == "") $this->data['message'] = "Введите номер детали для поиска по каталогу.";
-			elseif(strlen($search)<3) $this->data['message'] = "Строка поиска не может содержать менее трех символов.";
-			else $this->data['message'] = "Результаты поиска по ".$search.".";
+			if($search == "") $this->data['message'] = "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РґРµС‚Р°Р»Рё РґР»СЏ РїРѕРёСЃРєР° РїРѕ РєР°С‚Р°Р»РѕРіСѓ.";
+			elseif(strlen($search)<3) $this->data['message'] = "РЎС‚СЂРѕРєР° РїРѕРёСЃРєР° РЅРµ РјРѕР¶РµС‚ СЃРѕРґРµСЂР¶Р°С‚СЊ РјРµРЅРµРµ С‚СЂРµС… СЃРёРјРІРѕР»РѕРІ.";
+			else $this->data['message'] = "Р РµР·СѓР»СЊС‚Р°С‚С‹ РїРѕРёСЃРєР° РїРѕ ".$search.".";
 
 			if(strlen($search)>=3)
 			{
 				$search = str_replace("'","\'",$search);
-				$query = $this->db->query('SELECT ncat AS \'Номер по каталогу\',name AS \'Название\',price AS \'Цена\' FROM catalog_new WHERE ncat LIKE \'%'.$search.'%\' ORDER BY ncat LIMIT '.$page_jump.',30');
+				$query = $this->db->query('SELECT ncat AS \'РќРѕРјРµСЂ РїРѕ РєР°С‚Р°Р»РѕРіСѓ\',name AS \'РќР°Р·РІР°РЅРёРµ\',price AS \'Р¦РµРЅР°\' FROM catalog_new WHERE ncat LIKE \'%'.$search.'%\' ORDER BY ncat LIMIT '.$page_jump.',30');
 				if($query->num_rows())
 				{
 					$tmpl = array ('heading_cell_start' => '<td class="catalog_td_head">', 'cell_start' => '<td class="catalog_td">', 'cell_alt_start' => '<td class="catalog_td">');
@@ -222,7 +222,7 @@ class Catalog extends CI_Controller{
 					$this->data['table'] = $this->table->generate($query);
 				}
 				else
-				$this->data['table'] = "<b><h2>По Вашему запросу ничего не найдено.</h2></b>";
+				$this->data['table'] = "<b><h2>РџРѕ Р’Р°С€РµРјСѓ Р·Р°РїСЂРѕСЃСѓ РЅРёС‡РµРіРѕ РЅРµ РЅР°Р№РґРµРЅРѕ.</h2></b>";
 				
 				$this->load->library('pagination');
 				$query_num = $this->db->query('SELECT id AS count FROM catalog_new WHERE ncat LIKE \'%'.$search.'\'');

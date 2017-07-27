@@ -10,8 +10,8 @@ class _Admin_model extends CI_Model {
 	function createMenu()
 	{
 		$temp = '<ul>';
-			$type_parts     =   array('Аксессуары','Кузовные детали','Расходники','Запчасти');
-				$type_parts1     =   array(count($type_parts)=>'Кузовные детали','Оптика','Двигатель','Другое');
+			$type_parts     =   array('РђРєСЃРµСЃСЃСѓР°СЂС‹','РљСѓР·РѕРІРЅС‹Рµ РґРµС‚Р°Р»Рё','Р Р°СЃС…РѕРґРЅРёРєРё','Р—Р°РїС‡Р°СЃС‚Рё');
+				$type_parts1     =   array(count($type_parts)=>'РљСѓР·РѕРІРЅС‹Рµ РґРµС‚Р°Р»Рё','РћРїС‚РёРєР°','Р”РІРёРіР°С‚РµР»СЊ','Р”СЂСѓРіРѕРµ');
 				
 		$query = $this->db->query("SELECT id, name FROM brand;");
         foreach($query->result_array() as $rez)
@@ -32,7 +32,7 @@ class _Admin_model extends CI_Model {
                 $temp .= '</ul></li>';
             }
         }
-        $temp .='<li><a href="#">Комиссия</a><ul>';
+        $temp .='<li><a href="#">РљРѕРјРёСЃСЃРёСЏ</a><ul>';
                     $query = $this->db->query("SELECT id, name FROM type_parts WHERE catalogid = 2;");
                     foreach($query->result_array() as $v)
                         $temp .= '<li><a href="'.base_url().'_admin/catalog/0/'.$v['id'].'/" title="">'.$v['name'].'</a></li>';

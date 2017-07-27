@@ -22,7 +22,7 @@ class Service extends CI_Controller{
 			$this->data['bottom'] = $this->parser->parse('bottomview',$this->data, TRUE);
 			$this->data['head'] = $this->parser->parse('headview',$this->data, TRUE);
 			$this->data['jscript'] = '';
-			// Ðàçìåð ÒÎÏ ðàçäåëà
+			// Ð Ð°Ð·Ð¼ÐµÑ€ Ð¢ÐžÐŸ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°
 			$this->data['top_size'] = 3;
 		}
 		

@@ -1,13 +1,13 @@
 	<table width="990" cellpadding="5" cellspacing="2" height="300">
 		<tr>
 		<td align="center" valign="center" width="33%">
-		<a href="{base_url}catalog/main/"><h2><img src="{base_url}img/catalog_new.png" alt="Каталог товаров" style="border:0px;"><br/><br/>Каталог товаров</a></h2>
+		<a href="{base_url}catalog/main/"><h2><img src="{base_url}img/catalog_new.png" alt="РљР°С‚Р°Р»РѕРі С‚РѕРІР°СЂРѕРІ" style="border:0px;"><br/><br/>РљР°С‚Р°Р»РѕРі С‚РѕРІР°СЂРѕРІ</a></h2>
 		</td>
 		<td align="center" valign="center" width="33%">
-		<a href="{base_url}catalog/commission/"><h2><img src="{base_url}img/catalog_commission.png" alt="Комиссионные товары" style="border:0px;"><br/><br/>Комиссионные товары</a></h2>
+		<a href="{base_url}catalog/commission/"><h2><img src="{base_url}img/catalog_commission.png" alt="РљРѕРјРёСЃСЃРёРѕРЅРЅС‹Рµ С‚РѕРІР°СЂС‹" style="border:0px;"><br/><br/>РљРѕРјРёСЃСЃРёРѕРЅРЅС‹Рµ С‚РѕРІР°СЂС‹</a></h2>
 		</td>
 		<td align="center" valign="center" width="33%">
-		<a href="{base_url}catalog/search/"><h2><img src="{base_url}img/catalog_search.png" alt="Поиск по каталогу" style="border:0px;"><br/><br/>Поиск по каталогу</a></h2>
+		<a href="{base_url}catalog/search/"><h2><img src="{base_url}img/catalog_search.png" alt="РџРѕРёСЃРє РїРѕ РєР°С‚Р°Р»РѕРіСѓ" style="border:0px;"><br/><br/>РџРѕРёСЃРє РїРѕ РєР°С‚Р°Р»РѕРіСѓ</a></h2>
 		</td>
 		</tr>
 		</table>

@@ -3,9 +3,9 @@
     <tr>
 	<td width= "380px" align="left" valign="top">
 
-    Сервис ООО "Арс-Авто":<br><br>
-	<b>г. Казань<br>ул.Гвардейская, 53А, корпус 1<br></b>
-	(территория "Автопилот")<br><br>
+    РЎРµСЂРІРёСЃ РћРћРћ "РђСЂСЃ-РђРІС‚Рѕ":<br><br>
+	<b>Рі. РљР°Р·Р°РЅСЊ<br>СѓР».Р“РІР°СЂРґРµР№СЃРєР°СЏ, 53Рђ, РєРѕСЂРїСѓСЃ 1<br></b>
+	(С‚РµСЂСЂРёС‚РѕСЂРёСЏ "РђРІС‚РѕРїРёР»РѕС‚")<br><br>
     <table width="100%">
 			<?php
 			if(isset($phone) && is_array($phone))
@@ -13,7 +13,7 @@
             {
 			?>
 		    <tr>
-			<td align="left">Тел:</td><td align="left"><b><?=$v;?></b></td>
+			<td align="left">РўРµР»:</td><td align="left"><b><?=$v;?></b></td>
 		    </tr>
             <?php
 			}
@@ -22,7 +22,7 @@
             {
 			?>
 		    <tr>
-			<td align="left">Факс:</td><td align="left"><b><?=$v;?></b></td>
+			<td align="left">Р¤Р°РєСЃ:</td><td align="left"><b><?=$v;?></b></td>
 		    </tr>
             <?php
 			}
@@ -56,33 +56,33 @@
 			}
 			?>
 		</table>
-        <br><br>Режим работы:<br><br>
+        <br><br>Р РµР¶РёРј СЂР°Р±РѕС‚С‹:<br><br>
         <table width="100%">
 		    <tr>
-			<td align="left">Пн:</td><td align="left"><b>9:00 - 18:00</b></td>
+			<td align="left">РџРЅ:</td><td align="left"><b>9:00 - 18:00</b></td>
             </tr>
             <tr>
-			<td align="left">Вт:</td><td align="left"><b>9:00 - 18:00</b></td>
+			<td align="left">Р’С‚:</td><td align="left"><b>9:00 - 18:00</b></td>
             </tr>
             <tr>
-			<td align="left">Ср:</td><td align="left"><b>9:00 - 18:00</b></td>
+			<td align="left">РЎСЂ:</td><td align="left"><b>9:00 - 18:00</b></td>
             </tr>
             <tr>
-			<td align="left">Чт:</td><td align="left"><b>9:00 - 18:00</b></td>
+			<td align="left">Р§С‚:</td><td align="left"><b>9:00 - 18:00</b></td>
             </tr>
             <tr>
-			<td align="left">Пт:</td><td align="left"><b>9:00 - 18:00</b></td>
+			<td align="left">РџС‚:</td><td align="left"><b>9:00 - 18:00</b></td>
             </tr>
             <tr>
-			<td align="left">Сб:</td><td align="left"><b>9:00 - 14:00</b></td>
+			<td align="left">РЎР±:</td><td align="left"><b>9:00 - 14:00</b></td>
             </tr>
             <tr>
-			<td align="left">Вс:</td><td align="left"><b>Выходной</b></td>
+			<td align="left">Р’СЃ:</td><td align="left"><b>Р’С‹С…РѕРґРЅРѕР№</b></td>
             </tr>
         </table>
 	</td>
 	<td width= "610px" align="left" valign="top">
-	<center>Схема проезда
+	<center>РЎС…РµРјР° РїСЂРѕРµР·РґР°
 	<!--
 	<iframe width="600" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=216207138008071300481.0004cd75b0a88fd6bd804&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=55.775161,49.172144&amp;spn=0.004827,0.012853&amp;z=16&amp;output=embed"></iframe>
 	-->

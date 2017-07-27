@@ -13,7 +13,7 @@
 		<tr style="spacing: 10px 0px 10px 0px;" valign="top"><td style="width:490px; height: 100%; border:none;">{brand}</td></tr>
 		{/table_brand}
 		    <tr style="spacing: 10px 0px 10px 0px;" valign="top" align="center"><td style="width:990px; height: 100%; border:none;">
-			<h1><br/>Если Вы не нашли свой автомобиль на этой странице - оставьте <a href="{base_url}zakaz">заявку на сайте</a> и мы подберем запчасть для Вашего автомобиля</td></h1></tr>
+			<h1><br/>Р•СЃР»Рё Р’С‹ РЅРµ РЅР°С€Р»Рё СЃРІРѕР№ Р°РІС‚РѕРјРѕР±РёР»СЊ РЅР° СЌС‚РѕР№ СЃС‚СЂР°РЅРёС†Рµ - РѕСЃС‚Р°РІСЊС‚Рµ <a href="{base_url}zakaz">Р·Р°СЏРІРєСѓ РЅР° СЃР°Р№С‚Рµ</a> Рё РјС‹ РїРѕРґР±РµСЂРµРј Р·Р°РїС‡Р°СЃС‚СЊ РґР»СЏ Р’Р°С€РµРіРѕ Р°РІС‚РѕРјРѕР±РёР»СЏ</td></h1></tr>
 
 	</table>
 	{table}

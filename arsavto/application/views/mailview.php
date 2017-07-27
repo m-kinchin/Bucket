@@ -1,6 +1,6 @@
 <html>
     <head>
-    <title>Поступила заявка</title>
+    <title>РџРѕСЃС‚СѓРїРёР»Р° Р·Р°СЏРІРєР°</title>
 
     <style>
 	body {
@@ -13,18 +13,18 @@
     </style>
     </head>
     <body>
-    <h1><br>Поступила заявка!!!</h1><br><br>
-    <h2>Клиент отправил следующие данные:</h2> <br>
+    <h1><br>РџРѕСЃС‚СѓРїРёР»Р° Р·Р°СЏРІРєР°!!!</h1><br><br>
+    <h2>РљР»РёРµРЅС‚ РѕС‚РїСЂР°РІРёР» СЃР»РµРґСѓСЋС‰РёРµ РґР°РЅРЅС‹Рµ:</h2> <br>
     <table>
-		<tr><td align="right">Контактная информация: </td><td align="left">{contact}</td></tr>
-		<tr><td align="right">Марка и модель авто: </td><td align="left">{model}</td></tr>
-		<tr><td align="right">Год выпуска: </td><td align="left">{year}</td></tr>
-		<tr><td align="right">VIN-код: </td><td align="left">{vin}</td></tr>
-		<tr><td align="right">Тип кузова: </td><td align="left">{body}</td></tr>
-		<tr><td align="right">Объем двигателя: </td><td align="left">{value_engine}</td></tr>
-		<tr><td align="right">Мощность двигателя: </td><td align="left">{power}</td></tr>
-		<tr><td align="right">Тип КПП: </td><td align="left">{type_kpp}</td></tr>
-		<tr><td align="right">Тип привода колес: </td><td align="left">{type_privod}</td></tr>
-		<tr><td align="right">Расположение руля: </td><td align="left">{type_wheel}</td></tr>
-		<tr><td align="right">Текст заявки: </td><td align="left">{text_order}</td></tr>
+		<tr><td align="right">РљРѕРЅС‚Р°РєС‚РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ: </td><td align="left">{contact}</td></tr>
+		<tr><td align="right">РњР°СЂРєР° Рё РјРѕРґРµР»СЊ Р°РІС‚Рѕ: </td><td align="left">{model}</td></tr>
+		<tr><td align="right">Р“РѕРґ РІС‹РїСѓСЃРєР°: </td><td align="left">{year}</td></tr>
+		<tr><td align="right">VIN-РєРѕРґ: </td><td align="left">{vin}</td></tr>
+		<tr><td align="right">РўРёРї РєСѓР·РѕРІР°: </td><td align="left">{body}</td></tr>
+		<tr><td align="right">РћР±СЉРµРј РґРІРёРіР°С‚РµР»СЏ: </td><td align="left">{value_engine}</td></tr>
+		<tr><td align="right">РњРѕС‰РЅРѕСЃС‚СЊ РґРІРёРіР°С‚РµР»СЏ: </td><td align="left">{power}</td></tr>
+		<tr><td align="right">РўРёРї РљРџРџ: </td><td align="left">{type_kpp}</td></tr>
+		<tr><td align="right">РўРёРї РїСЂРёРІРѕРґР° РєРѕР»РµСЃ: </td><td align="left">{type_privod}</td></tr>
+		<tr><td align="right">Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ СЂСѓР»СЏ: </td><td align="left">{type_wheel}</td></tr>
+		<tr><td align="right">РўРµРєСЃС‚ Р·Р°СЏРІРєРё: </td><td align="left">{text_order}</td></tr>
 	</table></body></html>

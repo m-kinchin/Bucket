@@ -17,16 +17,16 @@ function CloseIt() {
 <form action="" method="POST" ENCTYPE="multipart/form-data">
 <table>
 <tr><td align="left" colspan="2"></td></tr>
-<tr><td align="right">Наименование детали*:</td><td align="left"><input type="text" name="part[name]" value='{name}'>{error_name}</td></tr>
-<tr><td align="right">Фирма-производитель:</td><td align="left"><input type="text" name="part[firm]" value='{firm}' ></td></tr>
-<tr><td align="right">Цена*:</td><td align="left"><input type="text" name="part[price]" value='{price}'>{error_price}</td></tr>
-<tr><td align="right">Номер по каталогу:</td><td align="left"><input type="text" name="part[ncat]" value='{ncat}'></td></tr>
-<tr><td align="right">Описание:</td><td align="left"><textarea name="part[des]">{des}</textarea></td></tr>
+<tr><td align="right">РќР°РёРјРµРЅРѕРІР°РЅРёРµ РґРµС‚Р°Р»Рё*:</td><td align="left"><input type="text" name="part[name]" value='{name}'>{error_name}</td></tr>
+<tr><td align="right">Р¤РёСЂРјР°-РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ:</td><td align="left"><input type="text" name="part[firm]" value='{firm}' ></td></tr>
+<tr><td align="right">Р¦РµРЅР°*:</td><td align="left"><input type="text" name="part[price]" value='{price}'>{error_price}</td></tr>
+<tr><td align="right">РќРѕРјРµСЂ РїРѕ РєР°С‚Р°Р»РѕРіСѓ:</td><td align="left"><input type="text" name="part[ncat]" value='{ncat}'></td></tr>
+<tr><td align="right">РћРїРёСЃР°РЅРёРµ:</td><td align="left"><textarea name="part[des]">{des}</textarea></td></tr>
 <input type="hidden" name="part[id]" value="{id}">
 <input type="hidden" name="first_time" value="1">
-<tr><td align="right">Товар недели:</td><td align="left"><input type="checkbox" name="part[sale]" value="1" {sale}></td></tr>
-<tr><td align="left" colspan="2">* - обязательны для заполнения</td></tr>
-<tr><td align="right"><input type="submit" onClick="close();"></td><td align="left"><input type="button" onClick="CloseIt()" value="Отмена"></td></tr>
+<tr><td align="right">РўРѕРІР°СЂ РЅРµРґРµР»Рё:</td><td align="left"><input type="checkbox" name="part[sale]" value="1" {sale}></td></tr>
+<tr><td align="left" colspan="2">* - РѕР±СЏР·Р°С‚РµР»СЊРЅС‹ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ</td></tr>
+<tr><td align="right"><input type="submit" onClick="close();"></td><td align="left"><input type="button" onClick="CloseIt()" value="РћС‚РјРµРЅР°"></td></tr>
 </table>
 </form>
 </body>

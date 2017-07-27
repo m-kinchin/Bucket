@@ -8,7 +8,7 @@ class Top_model extends CI_Model {
         parent::__construct();
 		$this->load->database();
     }
-	// Возвращает определенное количество товаров из ТОП-лита (распродажа) и перемещивает их
+	// Р’РѕР·РІСЂР°С‰Р°РµС‚ РѕРїСЂРµРґРµР»РµРЅРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂРѕРІ РёР· РўРћРџ-Р»РёС‚Р° (СЂР°СЃРїСЂРѕРґР°Р¶Р°) Рё РїРµСЂРµРјРµС‰РёРІР°РµС‚ РёС…
 	function get_top($query, $size)
     {
 		foreach($query->result_array() as $v) 	 
@@ -32,7 +32,7 @@ class Top_model extends CI_Model {
 				$img = 'no_image.jpg';
 				$class = '';
 			}																 
-			$out[] = "<td align=\"center\" valign=\"top\"><img src=\"".base_url()."img/".$img."\" style=\"border-color: #454545; border-width: 1; padding: 10px 10px 10px 20px;".$style."\"><br><b>".$rez['name']."</b><br>Производитель: <b>".$rez['firm']."</b><br>Цена за шт.: <font color=\"#ea2a37\" style=\"font-size: 15px; font-color:#F00\"><b>".$rez['price']."</b></font></td>";
+			$out[] = "<td align=\"center\" valign=\"top\"><img src=\"".base_url()."img/".$img."\" style=\"border-color: #454545; border-width: 1; padding: 10px 10px 10px 20px;".$style."\"><br><b>".$rez['name']."</b><br>РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ: <b>".$rez['firm']."</b><br>Р¦РµРЅР° Р·Р° С€С‚.: <font color=\"#ea2a37\" style=\"font-size: 15px; font-color:#F00\"><b>".$rez['price']."</b></font></td>";
 		}
 
         //$query = $this->db->get('catalog',10);

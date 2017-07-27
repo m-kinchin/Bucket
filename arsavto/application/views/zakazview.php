@@ -1,63 +1,63 @@
 <h4><form action="{base_url}zakaz/" method="post">
 <table style="width: 100%; height: 100%; margin-top: 20px; margin-bottom: 20px;">
-<tr><td valign="top" style="width: 300px;text-align: justify ;"><br><span style="padding-left:10px;">П</span>редлагаем Вам сделать online-заказ. После оформления заявки менеджер свяжется с Вами и уточнит подробности заказа.<br><br><span style="padding-left:10px;">Е</span>сли Вы не нашли нужной запчасти или модели Вашего авто в нашем каталоге, Вы можете оставить заявку с описанием, расположением детали, названием модели и годом выпуска и мы поможем Вам с подбором запасной части.</td><td>
+<tr><td valign="top" style="width: 300px;text-align: justify ;"><br><span style="padding-left:10px;">Рџ</span>СЂРµРґР»Р°РіР°РµРј Р’Р°Рј СЃРґРµР»Р°С‚СЊ online-Р·Р°РєР°Р·. РџРѕСЃР»Рµ РѕС„РѕСЂРјР»РµРЅРёСЏ Р·Р°СЏРІРєРё РјРµРЅРµРґР¶РµСЂ СЃРІСЏР¶РµС‚СЃСЏ СЃ Р’Р°РјРё Рё СѓС‚РѕС‡РЅРёС‚ РїРѕРґСЂРѕР±РЅРѕСЃС‚Рё Р·Р°РєР°Р·Р°.<br><br><span style="padding-left:10px;">Р•</span>СЃР»Рё Р’С‹ РЅРµ РЅР°С€Р»Рё РЅСѓР¶РЅРѕР№ Р·Р°РїС‡Р°СЃС‚Рё РёР»Рё РјРѕРґРµР»Рё Р’Р°С€РµРіРѕ Р°РІС‚Рѕ РІ РЅР°С€РµРј РєР°С‚Р°Р»РѕРіРµ, Р’С‹ РјРѕР¶РµС‚Рµ РѕСЃС‚Р°РІРёС‚СЊ Р·Р°СЏРІРєСѓ СЃ РѕРїРёСЃР°РЅРёРµРј, СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµРј РґРµС‚Р°Р»Рё, РЅР°Р·РІР°РЅРёРµРј РјРѕРґРµР»Рё Рё РіРѕРґРѕРј РІС‹РїСѓСЃРєР° Рё РјС‹ РїРѕРјРѕР¶РµРј Р’Р°Рј СЃ РїРѕРґР±РѕСЂРѕРј Р·Р°РїР°СЃРЅРѕР№ С‡Р°СЃС‚Рё.</td><td>
 <table style="width: 690px; height: 100%; margin-top: 10px; margin-bottom: 20px;">
 <tr>
 	<td width= "690px" align="left" valign="top">
     <table class="form_table">
 	{message}
 <tr>
-    <td>Контактная информация:</td>
+    <td>РљРѕРЅС‚Р°РєС‚РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ:</td>
     <td colspan="3"><textarea name="contact" cols="25" rows="3">{contact}</textarea></td>
 </tr>
 <tr>
-    <td>Марка и модель авто:</td>
+    <td>РњР°СЂРєР° Рё РјРѕРґРµР»СЊ Р°РІС‚Рѕ:</td>
     <td colspan="3"><input type="text" name="model" value="{model}"></td>
 </tr>
 <tr>
-    <td>Год выпуска:</td>
+    <td>Р“РѕРґ РІС‹РїСѓСЃРєР°:</td>
     <td colspan="3"><input type="text" name="year" maxlength="4" value="{year}"></td>
 </tr>
 <tr>
-    <td>VIN-код:</td>
+    <td>VIN-РєРѕРґ:</td>
     <td colspan="3"><input type="text" name="vin" value="{vin}"></td>
 </tr>
 <tr>
-    <td>Тип кузова:</td>
+    <td>РўРёРї РєСѓР·РѕРІР°:</td>
     <td colspan="3"><input type="text" name="body" value="{body}"></td>
 </tr>
 <tr>
-    <td>Объем двигателя:</td>
+    <td>РћР±СЉРµРј РґРІРёРіР°С‚РµР»СЏ:</td>
     <td colspan="3"><input type="text" name="value_engine" value="{value_engine}"></td>
 </tr>
 <tr>
-    <td>Мощность двигателя:</td>
+    <td>РњРѕС‰РЅРѕСЃС‚СЊ РґРІРёРіР°С‚РµР»СЏ:</td>
     <td colspan="3"><input type="text" name="power" value="{power}"></td>
 </tr>
 <tr>
-    <td>Тип КПП:</td>
+    <td>РўРёРї РљРџРџ:</td>
 	{type_kpp}
     <td width="130px"><input type="radio" value="{value}" id="{value}" name="type_kpp" {check}><label for="{value}">{value}</label></td>
     {/type_kpp}
 </tr>
 <tr>
-    <td>Тип привода колес:</td>
+    <td>РўРёРї РїСЂРёРІРѕРґР° РєРѕР»РµСЃ:</td>
     {type_privod}
     <td width="130px"><input type="radio" value="{value}" id="{value}" name="type_privod" {check}><label for="{value}">{value}</label></td>
     {/type_privod}
 </tr>
 <tr>
-    <td>Расположение руля:</td>
+    <td>Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ СЂСѓР»СЏ:</td>
     {type_wheel}
     <td width="130px"><input type="radio" value="{value}" id="{value}" name="type_wheel" {check}><label for="{value}">{value}</label></td>
     {/type_wheel}
 </tr>
 <tr>
-    <td>Текст заявки:</td>
+    <td>РўРµРєСЃС‚ Р·Р°СЏРІРєРё:</td>
     <td colspan="3"><textarea name="text_order" cols="50" rows="7" >{text_order}</textarea></td>
 </tr>
 <tr>
-    <td>Подтвердите, что вы человек:
+    <td>РџРѕРґС‚РІРµСЂРґРёС‚Рµ, С‡С‚Рѕ РІС‹ С‡РµР»РѕРІРµРє:
     </td>
     <td colspan="3">
     <img align="absmiddle" src="{base_url}img/captcha.php">&nbsp<input type="text" name="captcha" size="10">
@@ -67,9 +67,9 @@
     <td>
     </td>
 	<td colspan="3">
-    <input type="submit" value="Отправить">
+    <input type="submit" value="РћС‚РїСЂР°РІРёС‚СЊ">
     &nbsp
-    <input type="reset" value="Очистить">
+    <input type="reset" value="РћС‡РёСЃС‚РёС‚СЊ">
     </td>
 </tr>
 </table>
